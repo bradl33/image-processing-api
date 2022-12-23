@@ -5,7 +5,7 @@ const routes = express.Router();
 
 routes.get('/', (req: express.Request, res: express.Response) => {
   res.send(
-    'Visit http://localhost:3000/api/images?filename=?&width=?&height=?\n replacing ? with values in order to resize image'
+    '<p>Server up and running</p><p>Visit http://localhost:3000/api/images?filename=?&width=?&height=? replacing ? with values in order to resize image</p>'
   );
 });
 

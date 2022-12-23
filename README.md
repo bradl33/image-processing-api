@@ -5,24 +5,28 @@
 REST API JavaScript Application for resizing images.
 
 ---
-## Intro ##
+## Running the Program ##
 
 ```
-npm install to install dependencies
-```
-
-```
-npm run start to run the server on port 3000
+To install dependencies: 
+    npm install 
 ```
 
 ```
-npm run build to transpile Typescript to JavaScript and save to build folder
+To run the server on port 3000: 
+    npm run start
+```
+
+```
+To transpile Typescript to JavaScript and save to build folder: 
+    npm run build
 ```
 
 #### Testing ####
 
 ```
-npm run test yet to be implemented
+Tp build the project and run test:
+    npm run test
 ```
 
 #### Formatting ####
@@ -42,12 +46,9 @@ npm run lint
 Supply url in the format:
 [http://localhost:3000/api/images?filename=bamboo&height=200&width=350](http://localhost:3000/api/images?filename=bamboo&height=200&width=350)
 
-filename is name of image file, without extension.
-height is a positive integer upwards of zero
-width is a positive integer upwards of zero
-
-
-The endpoint is `api/images` and requires three query params:
+filename : name of image file, without extension.
+height : positive integer upwards of zero
+width : positive integer upwards of zero
 
 
 [http://localhost:3000/api](http://localhost:3000/api)

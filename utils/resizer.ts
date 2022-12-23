@@ -6,8 +6,12 @@ const resizeImage = (
   width: number,
   height: number
 ): Promise<sharp.OutputInfo> => {
-  const originalPath: string = path.resolve(`public/assets/original/${filename}.jpg`);
-  const thumbPath: string = path.resolve(`public/assets/thumb/${filename}_thumb.jpg`);
+  const originalPath: string = path.resolve(
+    `public/assets/original/${filename}.jpg`
+  );
+  const thumbPath: string = path.resolve(
+    `public/assets/thumb/${filename}_thumb.jpg`
+  );
 
   return sharp(originalPath)
     .resize({
