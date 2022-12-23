@@ -2,12 +2,12 @@
   "name": "image-processing-api",
   "version": "1.0.0",
   "description": "Image Resizing JavaScript Program",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon src/app.ts",
+    "start": "nodemon src/index.ts",
     "build": "npx tsc",
     "jasmine": "jasmine",
-    "test": "test",
+    "test": "npm run build && npm run jasmine",
     "lint": "eslint . --ext .ts",
     "prettier": "prettier --config .prettierrc **/*.ts --write"
   },
@@ -30,6 +30,7 @@
   "dependencies": {
     "express": "^4.18.2",
     "jasmine": "^4.5.0",
+    "jasmine-spec-reporter": "^7.0.0",
     "node-cache": "^5.1.2",
     "sharp": "^0.31.3"
   },
