@@ -55,4 +55,4 @@ Confirms that the server is up and running
 
 An example of a correct endpoint call would be: 
 
-[http://localhost:3000/api/images?filename=palmtunnel&height=250&width=220](http://localhost:3000/api/images?filename=palmtunnel&height=250&width=220)
+[http://localhost:3000/api/images?filename=palmtunnel&height=250&width=220](http://localhost:3000/api/images?filename=bamboo&height=250&width=350)
