@@ -17,7 +17,4 @@ const resizeImage = (
     .toFile(thumbPath);
 };
 
-//write test to pass below function and check that file thumb is saved
-// resizeImage("bamboo", 200, 350);
-
 export { resizeImage };
