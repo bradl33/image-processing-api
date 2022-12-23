@@ -13,13 +13,18 @@ To install dependencies:
 ```
 
 ```
-To run the server on port 3000: 
+To run the server on port 3000: (run Typescript)
     npm run start
 ```
 
 ```
 To transpile Typescript to JavaScript and save to build folder: 
     npm run build
+```
+
+```
+To run the server on port 3000: (run JavaScript)
+    node  build/src/.
 ```
 
 #### Testing ####
@@ -46,7 +51,7 @@ npm run lint
 Supply url in the format:
 [http://localhost:3000/api/images?filename=bamboo&width=350&height=200](http://localhost:3000/api/images?filename=bamboo&width=350&height=200)
 
-filename : name of image file, without extension.
+filename : name of image file, without extension
 height : positive integer upwards of zero
 width : positive integer upwards of zero
 
