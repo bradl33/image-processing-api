@@ -9,8 +9,8 @@ images.get('/', async (req: express.Request, res: express.Response) => {
   try {
     //get url params filename, width, height
     const filename = req.query.filename as unknown as string;
-    const width = Number(req.query.width as unknown as string);
-    const height = Number(req.query.height as unknown as string);
+    const width = parseInt(req.query.width as unknown as string);
+    const height = parseInt(req.query.height as unknown as string);
 
     const originalPath: string = path.resolve(`public/assets/original/${filename}.jpg`);
     const thumbPath: string = path.resolve(`public/assets/thumb/${filename}_thumb.jpg`);
