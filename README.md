@@ -44,7 +44,7 @@ npm run lint
 ## How to use ##
 
 Supply url in the format:
-[http://localhost:3000/api/images?filename=bamboo&height=200&width=350](http://localhost:3000/api/images?filename=bamboo&height=200&width=350)
+[http://localhost:3000/api/images?filename=bamboo&width=350&height=200](http://localhost:3000/api/images?filename=bamboo&width=350&height=200)
 
 filename : name of image file, without extension.
 height : positive integer upwards of zero
@@ -56,4 +56,4 @@ Confirms that the server is up and running
 
 An example of a correct endpoint call would be: 
 
-[http://localhost:3000/api/images?filename=palmtunnel&height=250&width=220](http://localhost:3000/api/images?filename=palmtunnel&height=250&width=220)
+[http://localhost:3000/api/images?filename=bamboo&width=350&height=250](http://localhost:3000/api/images?filename=bamboo&width=350&height=250)
