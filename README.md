@@ -1,4 +1,4 @@
-# Image Processing API - Udacity Fullstack JS Nanodegree #
+# Image Processing API - Udacity Nanodegree Fullstack JavaScript#
 
 ## Introduction ##
 
@@ -66,4 +66,4 @@ An example of a correct endpoint call would be:
 ## Extra Functionality ##
 Diplays error message when:  
 1. Filename does not exist
-2. Width and height dimensions not supplied or not a positibe number above 0
+2. Width and height dimensions not supplied or not a positive number above 0
