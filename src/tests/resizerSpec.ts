@@ -31,5 +31,4 @@ describe('Test image resizing functionality', () => {
     }
     throw new Error();
   });
-
 });

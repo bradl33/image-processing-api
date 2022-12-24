@@ -18,7 +18,7 @@ images.get(
         `public/assets/original/${filename}.jpg`
       );
 
-      if(!fs.existsSync(originalPath)){
+      if (!fs.existsSync(originalPath)) {
         res.status(404).send(`File ${filename} does not exist in storage`);
       }
 
