@@ -5,12 +5,12 @@ import fs, { existsSync } from 'fs';
 
 const images = express.Router();
 
-images.get('/', async (req: express.Request, res: express.Response) => {
+images.get('/', async (req: express.Request, res: express.Response):Promise<void> => {
   try {
     //get url params filename, width, height
-    const filename = req.query.filename as unknown as string;
-    const width = parseInt(req.query.width as unknown as string);
-    const height = parseInt(req.query.height as unknown as string);
+    const filename: string = req.query.filename as unknown as string;
+    const width: number = parseInt(req.query.width as unknown as string);
+    const height: number = parseInt(req.query.height as unknown as string);
 
     const originalPath: string = path.resolve(`public/assets/original/${filename}.jpg`);
     const thumbPath: string = path.resolve(`public/assets/thumb/${filename}_thumb.jpg`);
@@ -28,7 +28,7 @@ images.get('/', async (req: express.Request, res: express.Response) => {
       res.status(200).sendFile(thumbPath);
     }
 
-  } catch (error) {
+  } catch (error: unknown) {
     res.status(500).send('Something broke!');
   }
 });
