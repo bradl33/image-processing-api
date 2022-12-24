@@ -14,6 +14,14 @@ images.get(
       const width: number = parseInt(req.query.width as unknown as string);
       const height: number = parseInt(req.query.height as unknown as string);
 
+      const originalPath: string = path.resolve(
+        `public/assets/original/${filename}.jpg`
+      );
+
+      if(!fs.existsSync(originalPath)){
+        res.status(404).send(`File ${filename} does not exist in storage`);
+      }
+
       const thumbPath: string = path.resolve(
         `public/assets/thumb/${filename}${width}x${height}_thumb.jpg`
       );
