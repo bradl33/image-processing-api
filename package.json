@@ -29,9 +29,6 @@
   "homepage": "https://github.com/bradl33/image-processing-api#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "jasmine": "^4.5.0",
-    "jasmine-spec-reporter": "^7.0.0",
-    "node-cache": "^5.1.2",
     "sharp": "^0.31.3"
   },
   "devDependencies": {
@@ -44,6 +41,9 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "jasmine": "^4.5.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "node-cache": "^5.1.2",
     "nodemon": "^2.0.20",
     "prettier": "^2.8.1",
     "supertest": "^6.3.3",
