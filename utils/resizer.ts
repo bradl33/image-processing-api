@@ -10,7 +10,7 @@ const resizeImage = (
     `public/assets/original/${filename}.jpg`
   );
   const thumbPath: string = path.resolve(
-    `public/assets/thumb/${filename}_thumb.jpg`
+    `public/assets/thumb/${filename}${width}x${height}_thumb.jpg`
   );
 
   return sharp(originalPath)
